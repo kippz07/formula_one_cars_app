@@ -1,1 +1,13 @@
-<h1>Show</h1>
+<h1><%= @car.name %> - <%= @car.year %></h1>
+
+<h2>Engine: <%= @car.engine %> <%= @car.engine_config %></h2>
+
+<h3>Tyres: <%= @car.tyre_manufacturer %>, <%= @car.tyre_type %></h3>
+
+<p>Weight: <%= @car.weight %>kg</p>
+
+<p>Race wins: <%= @car.wins %></p>
+
+<p>Won drivers championship: <%= @car.drivers_championship %></p>
+
+<p>Won constructers championship: <%= @car.constructors_championship %></p>
