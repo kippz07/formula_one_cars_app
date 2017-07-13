@@ -1,13 +1,22 @@
-<h1><%= @car.name %> - <%= @car.year %></h1>
+<section>
+  <div class="show">
+    <h1><%= @car.name %> - <%= @car.year %></h1>
 
-<h2>Engine: <%= @car.engine %> <%= @car.engine_config %></h2>
+    <img src="<%= @car.image %>" class = "img-responsive">
 
-<h3>Tyres: <%= @car.tyre_manufacturer %>, <%= @car.tyre_type %></h3>
+    <p>Engine: <%= @car.engine %> <%= @car.engine_config %></p>
 
-<p>Weight: <%= @car.weight %>kg</p>
+    <p>Tyres: <%= @car.tyre_manufacturer %>, <%= @car.tyre_type %></p>
 
-<p>Race wins: <%= @car.wins %></p>
+    <p>Weight: <%= @car.weight %>kg</p>
 
-<p>Won drivers championship: <%= @car.drivers_championship %></p>
+    <p>Race wins: <%= @car.wins %></p>
 
-<p>Won constructers championship: <%= @car.constructors_championship %></p>
+    <p>Won drivers championship: <%= @car.drivers_championship %></p>
+
+    <p>Won constructers championship: <%= @car.constructors_championship %></p>
+
+    <p id="edit-delete"><%= link_to 'Edit', edit_car_path(@car) %> | <%= link_to 'Delete', @car, method: :delete %></p>
+      
+  </div>
+</section>

@@ -1,6 +1,11 @@
-<h1>Homepage</h1>
+<h1>Formula 1 Car Collection</h1>
 
-<% @cars.each do |car| %>
-  <h1><%= car.name %> - <%= car.year %></h1>
-  <img src="<%= car.image %>">
-<% end %>
+<div class="row">
+  <% @cars.each do |car| %>
+    <div class="col-md-3" onclick="window.location = '/cars/<%= car.id %>'">
+      <p class="title"><%= link_to car.name, car %> - <%= car.year %></p>
+      <img src="<%= car.image %>" class = "img-responsive">
+    </div>
+  <% end %>
+  </div>
+</div>

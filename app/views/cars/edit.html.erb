@@ -1,1 +1,65 @@
-<h1>Edit</h1>
+<section>
+  <h1>Edit car info</h1>
+  <div class="show">
+    <%= form_with(model: @car) do |form| %>
+      <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name, id: :car_name %>
+      </div>
+
+      <div class="field">
+        <%= form.label :engine %>
+        <%= form.text_field :engine, id: :car_engine %>
+      </div>
+
+      <div class="field">
+        <%= form.label :year %>
+        <%= form.number_field :year, id: :car_year %>
+      </div>
+
+      <div class="field">
+        <%= form.label :tyre_type %>
+        <%= form.text_field :type_type, id: :car_tyre_type %>
+      </div>
+
+      <div class="field">
+        <%= form.label :tyre_manufacturer %>
+        <%= form.text_field :tyre_manufacturer, id: :car_tyre_manufacturer %>
+      </div>
+
+      <div class="field">
+        <%= form.label :engine_config %>
+        <%= form.text_field :engine_config, id: :car_engine %>
+      </div>
+
+      <div class="field">
+        <%= form.label :weight %>
+        <%= form.number_field :weight, id: :car_weight %>
+      </div>
+
+      <div class="field">
+        <%= form.label :wins %>
+        <%= form.number_field :wins, id: :car_wins %>
+      </div>
+
+      <div class="field">
+        <%= form.label :drivers_championship %>
+        <%= form.text_field :drivers_championship, id: :car_drivers_championship %>
+      </div>
+
+      <div class="field">
+        <%= form.label :constructors_championship %>
+      <%= form.text_field :constructors_championship, id: :car_constructors_championship %>
+      </div>
+
+      <div class="field">
+        <%= form.label :image %>
+        <%= form.text_field :image, id: :car_image %>
+      </div>
+      
+      <div class="submit">
+        <%= form.submit %>
+      </div>
+    <% end %>
+  </div>
+</section>
