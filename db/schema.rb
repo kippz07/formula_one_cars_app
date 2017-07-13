@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170713133332) do
+ActiveRecord::Schema.define(version: 20170713135322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,12 +22,11 @@ ActiveRecord::Schema.define(version: 20170713133332) do
     t.string "tyre_type"
     t.string "tyre_manufacturer"
     t.string "engine_config"
-    t.integer "length"
-    t.integer "width"
     t.integer "wins"
     t.boolean "drivers_championship"
     t.boolean "constructors_championship"
     t.string "image"
+    t.integer "weight"
   end
 
 end
